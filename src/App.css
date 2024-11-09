@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  border: 0;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar1{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
+  background-color: rgb(33, 32, 32);
+  justify-content: space-between;
+  padding: 15px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.navbar2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.navbar3{
+  text-decoration: none;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  
+}
+.navbar3 a {
+  text-decoration: none;
+}
+.navbar1 a{
+  text-decoration: none;
+}
+.navbar3 ul li{
+  list-style: none;
+  align-items: center;
+  color: aliceblue;
+  padding: 0;
+  margin: 0;
+
+}
+.navbar3 ul{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 85px;
+}
+.navbar3 ul li:hover {
+  color: white;       /* Changes text color on hover */      /* Adds pointer cursor */
+  transform: scale(1.1);  /* Optional: Slightly enlarges the item */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+.search-box{
+  padding: 7px 20px;
+  border-radius: 7px;
+  border: 2px solid black;
+  background-color: rgb(241, 241, 241);
+  font-size:  large;
+}
+
+.section{
+  display: flex;
+  gap: 15px;
+}
+.image{
+  height: 240px;
+  width: 230px;
+  border-radius: 4px;
+}
+.main{
+  background-color: rgb(247, 247, 247);
+  padding-left: 15px;
+}
+.proSection{
+  display: grid;
+  grid-template-columns: repeat(4, 350px);
+}
+.proImg img{
+  width: 240px;
+  height: 240px;
+}
+.emart-logo h2{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.proSection a{
+  text-decoration: none;
+  color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.single-pro{
+  margin: 20px;
+}
+.single-pro:hover img {
+  transform: scale(1.05);            /* Slightly enlarges the image */
+  transition: transform 0.3s ease;  /* Smooth transition for scaling */
+}
+.proSection{
+  background-color: rgb(248, 248, 248);
+}
+.single-pro:hover {
+  color: white;                     /* Changes text color on hover for text inside .single-pro */
+  transition: color 0.3s ease;      /* Smooth transition for text color */
+}
+.item-desc{
+  display: flex;
+}
+.item1{
+  width: 500px;
+}
+.item1 img{
+  width: 100%;
+  padding-top: 30px;
+}
+.item{
+  padding-top: 10%;
+  padding-left: 0;
+}
+.utham{
+  margin-top: 30px;
+  padding: 10px 30px;
+  background-color: rgba(88, 147, 102, 0.573);
+  border: 2px solid rgb(0, 63, 10);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.utham:hover{
+  cursor: pointer;;
+}
+.data{
+  margin: 10px;
 }
